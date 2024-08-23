@@ -1,0 +1,56 @@
+/*Below 1000 px */
+
+@media (max-width: 62.5em) {
+    .section-one,
+    .tips_cards{
+        display:flex;
+       flex-direction: column;
+      }
+      .card-image{
+        width:60%;
+        height:60%;
+        display: flex;
+        justify-content: center;
+      }
+
+  }
+  /* Below 544 px */
+  @media(max-width:34em){
+    html{
+        font-size:50%;
+    }
+    h1{
+        font-size:3.6rem; 
+    }
+    h2{
+        font-size: 1.6rem;
+      }
+  .radio-buttons-container{
+      font-size: 1.6rem;
+      }
+      .metric-input, .imperial-input,
+      .metric-section, .imperial-section{
+        font-size:1.2rem;
+      }
+      input[type='radio'] {
+        transform: scale(1.2);
+         
+        }
+    .bmi-result-title,
+    .bmi-result-score{
+        font-size: 1.6rem;
+      }
+  }
+   /* Below 420 px */
+  @media(max-width:26.25em){
+    html{
+        font-size:45%;
+    }
+    .bmi-result-title,
+    .bmi-result-score{
+        font-size: 1.2rem;
+      }
+      h3{
+        font-size: 2.4em;
+      }
+  }

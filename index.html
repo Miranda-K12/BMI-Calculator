@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="32x32"
+      href="./images/favicon.svg"
+    />
+    <title>Body Mass Index Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="section section-one">
+            <div class="hero-text">
+    <h1>Body Mass Index</h1>
+    <p class="bmi-meaning">BMI is an inexpensive and easy screening method for weight category—<span class='range'>underweight, 
+        </span> <span class='range'>healthy weight</span>, <span class='range'>overweight</span>, and 
+        <span class='range'>obesity</span>. BMI is one type of tool to help health professionals assess the risk for chronic disease.
+        Furthermore, BMI appears to be as strongly correlated with various metabolic and disease outcome
+        as are these more direct measures of body fatness</p>
+    </div>
+    <div class="BMI-container">
+       <h2>Calculate Your BMI</h2>
+      <div class="bmi-calc-container">
+          <div class="radio-buttons-container">
+            <div class="metric">
+              <input
+                type="radio" checked
+                name="units"
+                id="metric-btn"
+                value="Metric"
+                title="Switch to metric units"
+                class="metric-mode"
+                required
+              />
+              <label for="metric" title="Switch to metric units">Metric</label>
+            </div>
+            <div class="imperial">
+              <input
+                type="radio"
+                name="units"
+                id="imperial-btn"
+                value="Imperial"
+                title="Switch to imperial units"
+                class="imperial-mode"
+              />
+              <label for="imperial" title="Switch to imperial units"
+                >Imperial</label
+              >
+            </div>
+          </div>
+          <div class="metric-section">
+            <div class="metric-height">
+              <label for="metric-height-cm" class="measurement-label"
+                >Height</label
+              >
+              <div class="unit-container">
+                <form autocomplete="off">
+                <input
+                  type="number"
+                  placeholder="0"
+                  name="height"
+                  title="Height"
+                  id="metric-height-cm"
+                  class="metric-input"
+                  required
+                />
+                </form>
+                <span class="unit-abbrev">cm</span>
+              </div>
+            </div>
+            <div class="metric-weight">
+              <label for="metric-weight-kg" class="measurement-label"
+                >Weight</label
+              >
+              <div class="unit-container">
+                <form autocomplete="off">
+                <input
+                  type="number"
+                  placeholder="0"
+                  name="weight"
+                  title="Weight"
+                  id="metric-weight-kg"
+                  class="metric-input"
+                />
+              </form>
+                <span class="unit-abbrev">kg</span>
+              </div>
+            </div>
+          </div>
+          <div class="imperial-section hidden">
+            <div class="imperial-height-section">
+              <label for="imperial-height-ft" class="measurement-label"
+                >Height</label
+              >
+              <div class="imperial-height-range">
+                <div class="imperial-height">
+                  <div class="unit-container">
+                    <form autocomplete="off">
+                    <input
+                      type="number"
+                      id="imperial-height-ft"
+                      name="height"
+                      placeholder="0"
+                      min="0"
+                      class="imperial-input"
+                    />
+                    </form>
+                    <span class="unit-abbrev">ft</span>
+                  </div>
+                </div>
+                <div class="imperial-height">
+                  <div class="unit-container">
+                    <form autocomplete="off">
+                    <input
+                      type="number"
+                      id="imperial-height-in"
+                      name="height"
+                      placeholder="0"
+                      min="0"
+                      class="imperial-input"
+                    />
+                    </form>
+                    <span class="unit-abbrev">in</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="imperial-weight-section">
+              <label for="imperial-weight-st" class="measurement-label"
+                >Weight</label
+              >
+              <div class="imperial-weight-range">
+                <div class="imperial-weight">
+                  <div class="unit-container">
+                    <form autocomplete="off">
+                    <input
+                      type="number"
+                      id="imperial-weight-st"
+                      name="weight"
+                      placeholder="0"
+                      min="0"
+                      class="imperial-input"
+                    />
+                    </form>
+                    <span class="unit-abbrev">st</span>
+                  </div>
+                </div>
+                <div class="imperial-weight">
+                  <div class="unit-container">
+                    <form autocomplete="off">
+                    <input
+                      type="number"
+                      id="imperial-weight-lbs"
+                      name="weight"
+                      placeholder="0"
+                      min="0"
+                      class="imperial-input"
+                      
+                    />
+                    </form>
+                    <span class="unit-abbrev">lbs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="bmi-result">
+        <h4 class="bmi-result-title" >Your BMI result is <span class='bmi-result-score'></span></h4>
+    </div>
+  </div>
+    </div>
+
+        <div class="section  section-three">
+            <h3>Tips for a healthy BMI</h3>
+            <div class="tips_cards">
+            <div class="card card_one">
+              <div class="card-images">
+                <img src="images/diet..jpg"alt='woman thinks about food' class="card-image">
+              </div>
+<h5>Stop Crash Dieting</h5>
+<p>A balanced, calorie-controlled diet is the ticket to a healthy BMI – the safe way. By making simple healthier food swaps, reducing portion sizes and cutting down on high-calorie food and drink, 
+    you’re more likely to reach a healthy BMI steadily.</p>
+   
+            </div>
+            <div class="card card_two">
+              
+              <div class="card-images">
+                <img src="images/man_is_eating.jpg"alt='man is eating' class="card-image">
+              </div>
+                <h5>Avoid hidden sugar</h5>
+                <p>Plain dairy foods and fruit naturally contain some sugar, but it’s not added. 
+                  These are nutritious foods which should be included as part of a healthy diet.
+                  WHO recommends we limit our added sugar intake to 24 grams of sugar or six teaspoons a day.</p>
+        
+          </div>
+            <div class="card card_three">
+              <div class="card-images">
+                <img src="images/work-out.jpg"alt='woman thinks about food' class="card-image">
+              </div>
+                <h5>Get your heart pumping</h5>
+                <p>It’s no secret that the more you exercise, the more you can lower your BMI, healthily.
+                You should mix up cardio and strength training to strengthen key muscles and achieve better weight loss results.
+          
+            </div>
+            <div class="card card_four">
+              <div class="card-images">
+                <img src="images/walking.jpg"alt='woman thinks about food' class="card-image">
+              </div>
+                <h5>Simply move more</h5>
+                <p>Walk or cycle to work if you can, and choose stairs over the lift. These are not only healthy changes towards a healthier BMI, 
+                    they’re also very suitable with social distancing guidelines in place.</p>
+                   
+            </div>
+            </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+  </html>
